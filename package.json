@@ -1,0 +1,21 @@
+{
+  "name": "zekraneh",
+  "private": true,
+  "packageManager": "bun@1.3.14",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "android": "bun run --cwd apps/client android",
+    "build:android:preview-local": "bun run --cwd apps/client build:preview:local",
+    "build:android:aab-local": "bun run --cwd apps/client build:aab:local",
+    "dev": "bun run --cwd apps/client start",
+    "web": "bun run --cwd apps/client web",
+    "validate:content": "bun packages/content/scripts/validate.ts",
+    "test": "bun test",
+    "typecheck": "bun run --cwd packages/domain typecheck && bun run --cwd packages/content typecheck && bun run --cwd apps/client typecheck",
+    "lint": "bun run --cwd apps/client lint",
+    "export:web": "bun run --cwd apps/client export:web"
+  }
+}

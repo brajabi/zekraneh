@@ -1,0 +1,20 @@
+{
+  "name": "@zekraneh/content",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "scripts": {
+    "validate": "bun scripts/validate.ts",
+    "typecheck": "bunx tsc --noEmit"
+  },
+  "dependencies": {
+    "@zekraneh/domain": "workspace:*"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "typescript": "~6.0.3"
+  }
+}

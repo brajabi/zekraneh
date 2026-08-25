@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "id": "ziyarat-ashura",
+  "version": 1,
+  "contentVersion": 2,
+  "title": { "fa": "زیارت عاشورا", "ar": "زيارة عاشوراء" },
+  "description": {
+    "fa": "زیارت امام حسین علیه‌السلام با صد لعن، صد سلام و دعای پایانی.",
+    "ar": "زيارة الإمام الحسين عليه السلام مع مائة لعنة ومائة سلام ودعاء الختام."
+  },
+  "sourceIds": ["al-islam-ziyarat-ashura"],
+  "modes": [
+    {
+      "id": "complete",
+      "title": { "fa": "خواندن کامل", "ar": "القراءة الكاملة" },
+      "description": { "fa": "متن زیارت، صد لعن، صد سلام و دعای پایانی", "ar": "نص الزيارة ومائة لعنة ومائة سلام ودعاء الختام" },
+      "stageIds": ["ziyarat"]
+    }
+  ],
+  "stages": [
+    {
+      "id": "ziyarat",
+      "title": { "fa": "زیارت عاشورا", "ar": "زيارة عاشوراء" },
+      "steps": [
+        {
+          "id": "ziyarat-intention",
+          "kind": "instruction",
+          "title": { "fa": "آمادگی برای زیارت", "ar": "التهيؤ للزيارة" },
+          "body": { "fa": "با حضور قلب و رو به قبله، زیارت عاشورا را آغاز کنید.", "ar": "ابدأ زيارة عاشوراء بحضور القلب ومستقبلاً القبلة." },
+          "optional": false
+        },
+        { "id": "ziyarat-opening", "kind": "recitation", "title": { "fa": "متن زیارت", "ar": "نص الزيارة" }, "contentId": "ziyarat-ashura-opening", "optional": false },
+        { "id": "ziyarat-lan-100", "kind": "counter", "title": { "fa": "صد مرتبه لعن", "ar": "اللعن مائة مرة" }, "contentId": "ziyarat-ashura-lan", "target": 100, "optional": true },
+        { "id": "ziyarat-salam-100", "kind": "counter", "title": { "fa": "صد مرتبه سلام", "ar": "السلام مائة مرة" }, "contentId": "ziyarat-ashura-salam", "target": 100, "optional": true },
+        { "id": "ziyarat-closing", "kind": "recitation", "title": { "fa": "دعای پایانی", "ar": "دعاء الختام" }, "contentId": "ziyarat-ashura-closing", "optional": false }
+      ]
+    }
+  ]
+}

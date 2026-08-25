@@ -1,0 +1,129 @@
+{
+  "schemaVersion": 1,
+  "id": "night-prayer",
+  "version": 2,
+  "contentVersion": 2,
+  "title": { "fa": "نماز شب", "ar": "صلاة الليل" },
+  "description": {
+    "fa": "راهنمای مرحله‌به‌مرحله نافله شب؛ یازده رکعت شامل چهار نماز دورکعتی، شفع و وتر. مستحبات را می‌توانید رد کنید.",
+    "ar": "دليل خطوة بخطوة لصلاة الليل؛ إحدى عشرة ركعة: أربع صلوات من ركعتين، ثم الشفع والوتر. يمكن تخطي المستحبات."
+  },
+  "sourceIds": ["sistani-night-prayer-2061", "sistani-night-prayer-qa"],
+  "modes": [
+    {
+      "id": "complete",
+      "title": { "fa": "کامل", "ar": "كاملة" },
+      "description": { "fa": "چهار نماز دورکعتی، شفع و وتر", "ar": "أربع صلوات من ركعتين، ثم الشفع والوتر" },
+      "stageIds": ["nafila-1", "nafila-2", "nafila-3", "nafila-4", "shaf", "witr"]
+    },
+    {
+      "id": "shaf-witr",
+      "title": { "fa": "شفع و وتر", "ar": "الشفع والوتر" },
+      "description": { "fa": "دو رکعت شفع و یک رکعت وتر", "ar": "ركعتا الشفع وركعة الوتر" },
+      "stageIds": ["shaf", "witr"]
+    },
+    {
+      "id": "witr-only",
+      "title": { "fa": "فقط وتر", "ar": "الوتر فقط" },
+      "description": { "fa": "حداقل نماز شب؛ یک رکعت وتر", "ar": "الحد الأدنى لصلاة الليل؛ ركعة الوتر" },
+      "stageIds": ["witr"]
+    }
+  ],
+  "stages": [
+    {
+      "id": "nafila-1",
+      "title": { "fa": "دو رکعتی اول", "ar": "الركعتان الأولى" },
+      "steps": [
+        { "id": "n1-intention", "kind": "instruction", "title": { "fa": "نیت و تکبیرة‌الاحرام", "ar": "النية وتكبيرة الإحرام" }, "body": { "fa": "دو رکعت نماز نافله شب را به قصد قربت نیت کنید، رو به قبله بایستید و تکبیرة‌الاحرام بگویید.", "ar": "انوِ ركعتي نافلة الليل قربةً إلى الله، واستقبل القبلة ثم كبّر تكبيرة الإحرام." }, "optional": false },
+        { "id": "n1-r1-fatiha", "kind": "recitation", "title": { "fa": "رکعت اول: حمد", "ar": "الركعة الأولى: الفاتحة" }, "contentId": "surah-al-fatiha", "optional": false },
+        { "id": "n1-r1-ikhlas", "kind": "recitation", "title": { "fa": "رکعت اول: توحید", "ar": "الركعة الأولى: الإخلاص" }, "contentId": "surah-al-ikhlas", "optional": true },
+        { "id": "n1-r1-actions", "kind": "instruction", "title": { "fa": "رکوع و دو سجده", "ar": "الركوع والسجدتان" }, "body": { "fa": "رکوع و سپس دو سجده رکعت اول را انجام دهید و برای رکعت دوم برخیزید.", "ar": "اركع ثم اسجد السجدتين للركعة الأولى، وبعدها قم للركعة الثانية." }, "optional": false },
+        { "id": "n1-r2-fatiha", "kind": "recitation", "title": { "fa": "رکعت دوم: حمد", "ar": "الركعة الثانية: الفاتحة" }, "contentId": "surah-al-fatiha", "optional": false },
+        { "id": "n1-r2-ikhlas", "kind": "recitation", "title": { "fa": "رکعت دوم: توحید", "ar": "الركعة الثانية: الإخلاص" }, "contentId": "surah-al-ikhlas", "optional": true },
+        { "id": "n1-qunoot", "kind": "instruction", "title": { "fa": "قنوت", "ar": "القنوت" }, "body": { "fa": "پیش از رکوع رکعت دوم قنوت بخوانید. قنوت در این نماز مستحب است.", "ar": "اقرأ القنوت قبل ركوع الركعة الثانية، وهو مستحب." }, "optional": true },
+        { "id": "n1-r2-actions", "kind": "instruction", "title": { "fa": "رکوع و دو سجده", "ar": "الركوع والسجدتان" }, "body": { "fa": "رکوع و دو سجده رکعت دوم را انجام دهید.", "ar": "اركع ثم اسجد السجدتين للركعة الثانية." }, "optional": false },
+        { "id": "n1-finish", "kind": "instruction", "title": { "fa": "تشهد و سلام", "ar": "التشهد والتسليم" }, "body": { "fa": "تشهد و سلام نماز را بخوانید.", "ar": "اقرأ التشهد ثم سلّم." }, "optional": false }
+      ]
+    },
+    {
+      "id": "nafila-2",
+      "title": { "fa": "دو رکعتی دوم", "ar": "الركعتان الثانية" },
+      "steps": [
+        { "id": "n2-intention", "kind": "instruction", "title": { "fa": "نیت و تکبیرة‌الاحرام", "ar": "النية وتكبيرة الإحرام" }, "body": { "fa": "دو رکعت دیگر نماز نافله شب را نیت کنید و تکبیرة‌الاحرام بگویید.", "ar": "انوِ ركعتين أخريين من نافلة الليل ثم كبّر تكبيرة الإحرام." }, "optional": false },
+        { "id": "n2-r1-fatiha", "kind": "recitation", "title": { "fa": "رکعت اول: حمد", "ar": "الركعة الأولى: الفاتحة" }, "contentId": "surah-al-fatiha", "optional": false },
+        { "id": "n2-r1-ikhlas", "kind": "recitation", "title": { "fa": "رکعت اول: توحید", "ar": "الركعة الأولى: الإخلاص" }, "contentId": "surah-al-ikhlas", "optional": true },
+        { "id": "n2-r1-actions", "kind": "instruction", "title": { "fa": "رکوع و دو سجده", "ar": "الركوع والسجدتان" }, "body": { "fa": "رکوع و دو سجده رکعت اول را انجام دهید و برخیزید.", "ar": "اركع واسجد السجدتين ثم قم للركعة الثانية." }, "optional": false },
+        { "id": "n2-r2-fatiha", "kind": "recitation", "title": { "fa": "رکعت دوم: حمد", "ar": "الركعة الثانية: الفاتحة" }, "contentId": "surah-al-fatiha", "optional": false },
+        { "id": "n2-r2-ikhlas", "kind": "recitation", "title": { "fa": "رکعت دوم: توحید", "ar": "الركعة الثانية: الإخلاص" }, "contentId": "surah-al-ikhlas", "optional": true },
+        { "id": "n2-qunoot", "kind": "instruction", "title": { "fa": "قنوت", "ar": "القنوت" }, "body": { "fa": "پیش از رکوع رکعت دوم قنوت بخوانید.", "ar": "اقرأ القنوت قبل ركوع الركعة الثانية." }, "optional": true },
+        { "id": "n2-r2-actions", "kind": "instruction", "title": { "fa": "رکوع و دو سجده", "ar": "الركوع والسجدتان" }, "body": { "fa": "رکوع و دو سجده رکعت دوم را انجام دهید.", "ar": "اركع ثم اسجد السجدتين للركعة الثانية." }, "optional": false },
+        { "id": "n2-finish", "kind": "instruction", "title": { "fa": "تشهد و سلام", "ar": "التشهد والتسليم" }, "body": { "fa": "تشهد و سلام نماز را بخوانید.", "ar": "اقرأ التشهد ثم سلّم." }, "optional": false }
+      ]
+    },
+    {
+      "id": "nafila-3",
+      "title": { "fa": "دو رکعتی سوم", "ar": "الركعتان الثالثة" },
+      "steps": [
+        { "id": "n3-intention", "kind": "instruction", "title": { "fa": "نیت و تکبیرة‌الاحرام", "ar": "النية وتكبيرة الإحرام" }, "body": { "fa": "دو رکعت دیگر نماز نافله شب را نیت کنید و تکبیرة‌الاحرام بگویید.", "ar": "انوِ ركعتين أخريين من نافلة الليل ثم كبّر تكبيرة الإحرام." }, "optional": false },
+        { "id": "n3-r1-fatiha", "kind": "recitation", "title": { "fa": "رکعت اول: حمد", "ar": "الركعة الأولى: الفاتحة" }, "contentId": "surah-al-fatiha", "optional": false },
+        { "id": "n3-r1-ikhlas", "kind": "recitation", "title": { "fa": "رکعت اول: توحید", "ar": "الركعة الأولى: الإخلاص" }, "contentId": "surah-al-ikhlas", "optional": true },
+        { "id": "n3-r1-actions", "kind": "instruction", "title": { "fa": "رکوع و دو سجده", "ar": "الركوع والسجدتان" }, "body": { "fa": "رکوع و دو سجده رکعت اول را انجام دهید و برخیزید.", "ar": "اركع واسجد السجدتين ثم قم للركعة الثانية." }, "optional": false },
+        { "id": "n3-r2-fatiha", "kind": "recitation", "title": { "fa": "رکعت دوم: حمد", "ar": "الركعة الثانية: الفاتحة" }, "contentId": "surah-al-fatiha", "optional": false },
+        { "id": "n3-r2-ikhlas", "kind": "recitation", "title": { "fa": "رکعت دوم: توحید", "ar": "الركعة الثانية: الإخلاص" }, "contentId": "surah-al-ikhlas", "optional": true },
+        { "id": "n3-qunoot", "kind": "instruction", "title": { "fa": "قنوت", "ar": "القنوت" }, "body": { "fa": "پیش از رکوع رکعت دوم قنوت بخوانید.", "ar": "اقرأ القنوت قبل ركوع الركعة الثانية." }, "optional": true },
+        { "id": "n3-r2-actions", "kind": "instruction", "title": { "fa": "رکوع و دو سجده", "ar": "الركوع والسجدتان" }, "body": { "fa": "رکوع و دو سجده رکعت دوم را انجام دهید.", "ar": "اركع ثم اسجد السجدتين للركعة الثانية." }, "optional": false },
+        { "id": "n3-finish", "kind": "instruction", "title": { "fa": "تشهد و سلام", "ar": "التشهد والتسليم" }, "body": { "fa": "تشهد و سلام نماز را بخوانید.", "ar": "اقرأ التشهد ثم سلّم." }, "optional": false }
+      ]
+    },
+    {
+      "id": "nafila-4",
+      "title": { "fa": "دو رکعتی چهارم", "ar": "الركعتان الرابعة" },
+      "steps": [
+        { "id": "n4-intention", "kind": "instruction", "title": { "fa": "نیت و تکبیرة‌الاحرام", "ar": "النية وتكبيرة الإحرام" }, "body": { "fa": "دو رکعت پایانی نافله شب را نیت کنید و تکبیرة‌الاحرام بگویید.", "ar": "انوِ الركعتين الأخيرتين من نافلة الليل ثم كبّر تكبيرة الإحرام." }, "optional": false },
+        { "id": "n4-r1-fatiha", "kind": "recitation", "title": { "fa": "رکعت اول: حمد", "ar": "الركعة الأولى: الفاتحة" }, "contentId": "surah-al-fatiha", "optional": false },
+        { "id": "n4-r1-ikhlas", "kind": "recitation", "title": { "fa": "رکعت اول: توحید", "ar": "الركعة الأولى: الإخلاص" }, "contentId": "surah-al-ikhlas", "optional": true },
+        { "id": "n4-r1-actions", "kind": "instruction", "title": { "fa": "رکوع و دو سجده", "ar": "الركوع والسجدتان" }, "body": { "fa": "رکوع و دو سجده رکعت اول را انجام دهید و برخیزید.", "ar": "اركع واسجد السجدتين ثم قم للركعة الثانية." }, "optional": false },
+        { "id": "n4-r2-fatiha", "kind": "recitation", "title": { "fa": "رکعت دوم: حمد", "ar": "الركعة الثانية: الفاتحة" }, "contentId": "surah-al-fatiha", "optional": false },
+        { "id": "n4-r2-ikhlas", "kind": "recitation", "title": { "fa": "رکعت دوم: توحید", "ar": "الركعة الثانية: الإخلاص" }, "contentId": "surah-al-ikhlas", "optional": true },
+        { "id": "n4-qunoot", "kind": "instruction", "title": { "fa": "قنوت", "ar": "القنوت" }, "body": { "fa": "پیش از رکوع رکعت دوم قنوت بخوانید.", "ar": "اقرأ القنوت قبل ركوع الركعة الثانية." }, "optional": true },
+        { "id": "n4-r2-actions", "kind": "instruction", "title": { "fa": "رکوع و دو سجده", "ar": "الركوع والسجدتان" }, "body": { "fa": "رکوع و دو سجده رکعت دوم را انجام دهید.", "ar": "اركع ثم اسجد السجدتين للركعة الثانية." }, "optional": false },
+        { "id": "n4-finish", "kind": "instruction", "title": { "fa": "تشهد و سلام", "ar": "التشهد والتسليم" }, "body": { "fa": "تشهد و سلام نماز را بخوانید.", "ar": "اقرأ التشهد ثم سلّم." }, "optional": false }
+      ]
+    },
+    {
+      "id": "shaf",
+      "title": { "fa": "نماز شفع", "ar": "صلاة الشفع" },
+      "steps": [
+        { "id": "shaf-intention", "kind": "instruction", "title": { "fa": "نیت و تکبیرة‌الاحرام", "ar": "النية وتكبيرة الإحرام" }, "body": { "fa": "دو رکعت نماز شفع را به قصد قربت نیت کنید و تکبیرة‌الاحرام بگویید.", "ar": "انوِ ركعتي صلاة الشفع قربةً إلى الله ثم كبّر تكبيرة الإحرام." }, "optional": false },
+        { "id": "shaf-r1-fatiha", "kind": "recitation", "title": { "fa": "رکعت اول: حمد", "ar": "الركعة الأولى: الفاتحة" }, "contentId": "surah-al-fatiha", "optional": false },
+        { "id": "shaf-r1-falaq", "kind": "recitation", "title": { "fa": "رکعت اول: فلق", "ar": "الركعة الأولى: الفلق" }, "contentId": "surah-al-falaq", "optional": true },
+        { "id": "shaf-r1-actions", "kind": "instruction", "title": { "fa": "رکوع و دو سجده", "ar": "الركوع والسجدتان" }, "body": { "fa": "رکوع و دو سجده رکعت اول را انجام دهید و برای رکعت دوم برخیزید.", "ar": "اركع واسجد السجدتين ثم قم للركعة الثانية." }, "optional": false },
+        { "id": "shaf-r2-fatiha", "kind": "recitation", "title": { "fa": "رکعت دوم: حمد", "ar": "الركعة الثانية: الفاتحة" }, "contentId": "surah-al-fatiha", "optional": false },
+        { "id": "shaf-r2-nas", "kind": "recitation", "title": { "fa": "رکعت دوم: ناس", "ar": "الركعة الثانية: الناس" }, "contentId": "surah-an-nas", "optional": true },
+        { "id": "shaf-qunoot", "kind": "instruction", "title": { "fa": "قنوت رجائی", "ar": "القنوت برجاء المطلوبية" }, "body": { "fa": "مستحب بودن قنوت شفع ثابت نیست؛ در صورت تمایل آن را به امید مطلوب بودن انجام دهید.", "ar": "لم يثبت استحباب القنوت في الشفع؛ ويمكن فعله برجاء المطلوبية." }, "optional": true },
+        { "id": "shaf-r2-actions", "kind": "instruction", "title": { "fa": "رکوع و دو سجده", "ar": "الركوع والسجدتان" }, "body": { "fa": "رکوع و دو سجده رکعت دوم را انجام دهید.", "ar": "اركع ثم اسجد السجدتين للركعة الثانية." }, "optional": false },
+        { "id": "shaf-finish", "kind": "instruction", "title": { "fa": "تشهد و سلام", "ar": "التشهد والتسليم" }, "body": { "fa": "تشهد و سلام نماز شفع را بخوانید.", "ar": "اقرأ التشهد ثم سلّم صلاة الشفع." }, "optional": false }
+      ]
+    },
+    {
+      "id": "witr",
+      "title": { "fa": "نماز وتر", "ar": "صلاة الوتر" },
+      "steps": [
+        { "id": "witr-intention", "kind": "instruction", "title": { "fa": "نیت و تکبیرة‌الاحرام", "ar": "النية وتكبيرة الإحرام" }, "body": { "fa": "یک رکعت نماز وتر را به قصد قربت نیت کنید و تکبیرة‌الاحرام بگویید.", "ar": "انوِ ركعة صلاة الوتر قربةً إلى الله ثم كبّر تكبيرة الإحرام." }, "optional": false },
+        { "id": "witr-fatiha", "kind": "recitation", "title": { "fa": "سوره حمد", "ar": "سورة الفاتحة" }, "contentId": "surah-al-fatiha", "optional": false },
+        { "id": "witr-ikhlas-3", "kind": "counter", "title": { "fa": "سه بار سوره توحید", "ar": "سورة الإخلاص ثلاث مرات" }, "contentId": "surah-al-ikhlas", "target": 3, "optional": true },
+        { "id": "witr-nas", "kind": "recitation", "title": { "fa": "سوره ناس", "ar": "سورة الناس" }, "contentId": "surah-an-nas", "optional": true },
+        { "id": "witr-falaq", "kind": "recitation", "title": { "fa": "سوره فلق", "ar": "سورة الفلق" }, "contentId": "surah-al-falaq", "optional": true },
+        { "id": "witr-qunoot-start", "kind": "instruction", "title": { "fa": "آغاز قنوت", "ar": "بدء القنوت" }, "body": { "fa": "دست‌ها را برای قنوت بالا آورید. موارد بعدی از مستحبات قنوت‌اند و همگی قابل ردکردن هستند.", "ar": "ارفع يديك للقنوت. الخطوات التالية من مستحبات القنوت ويمكن تخطيها." }, "optional": true },
+        { "id": "witr-istighfar-70", "kind": "counter", "title": { "fa": "هفتاد مرتبه استغفار", "ar": "الاستغفار سبعين مرة" }, "contentId": "dhikr-istighfar-70", "target": 70, "optional": true },
+        { "id": "witr-believers-40", "kind": "counter", "title": { "fa": "دعا برای چهل مؤمن", "ar": "الدعاء لأربعين مؤمناً" }, "contentId": "dua-believer", "target": 40, "optional": true },
+        { "id": "witr-refuge-7", "kind": "counter", "title": { "fa": "هفت مرتبه پناه از آتش", "ar": "الاستعاذة من النار سبع مرات" }, "contentId": "dhikr-refuge-fire", "target": 7, "optional": true },
+        { "id": "witr-afw-300", "kind": "counter", "title": { "fa": "سیصد مرتبه العفو", "ar": "العفو ثلاثمائة مرة" }, "contentId": "dhikr-al-afw", "target": 300, "optional": true },
+        { "id": "witr-ruku", "kind": "instruction", "title": { "fa": "رکوع", "ar": "الركوع" }, "body": { "fa": "قنوت را پایان دهید و رکوع نماز وتر را انجام دهید.", "ar": "اختم القنوت ثم اركع ركوع صلاة الوتر." }, "optional": false },
+        { "id": "witr-after-ruku", "kind": "recitation", "title": { "fa": "دعای پس از رکوع", "ar": "دعاء ما بعد الركوع" }, "contentId": "dua-after-ruku", "optional": true },
+        { "id": "witr-sujud", "kind": "instruction", "title": { "fa": "دو سجده", "ar": "السجدتان" }, "body": { "fa": "دو سجده نماز وتر را انجام دهید.", "ar": "اسجد سجدتي صلاة الوتر." }, "optional": false },
+        { "id": "witr-finish", "kind": "instruction", "title": { "fa": "تشهد و سلام", "ar": "التشهد والتسليم" }, "body": { "fa": "تشهد و سلام نماز وتر را بخوانید.", "ar": "اقرأ التشهد ثم سلّم صلاة الوتر." }, "optional": false }
+      ]
+    }
+  ]
+}
